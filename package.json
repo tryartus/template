@@ -11,12 +11,12 @@
 		"format": "pnpm rome format . --write"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.4.4",
-		"@commitlint/config-conventional": "^17.4.4",
-		"@types/node": "^18.14.6",
+		"@commitlint/cli": "^17.6.3",
+		"@commitlint/config-conventional": "^17.6.3",
+		"@types/node": "^18.16.16",
 		"husky": "^8.0.3",
-		"rome": "12.0.0",
-		"tsc-watch": "^6.0.0",
+		"rome": "12.1.2",
+		"tsc-watch": "^6.0.4",
 		"turbo": "latest"
 	},
 	"engines": {
@@ -26,5 +26,5 @@
 		"ansi-regex": "^5.0.1",
 		"minimist": "^1.2.8"
 	},
-	"packageManager": "pnpm@7.28.0"
+	"packageManager": "pnpm@7.32.5"
 }
