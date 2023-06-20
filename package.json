@@ -26,5 +26,5 @@
 		"ansi-regex": "^5.0.1",
 		"minimist": "^1.2.8"
 	},
-	"packageManager": "pnpm@8.6.2"
+	"packageManager": "pnpm@8.6.3"
 }
