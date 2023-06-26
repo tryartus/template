@@ -8,28 +8,31 @@ overrides:
   ansi-regex: ^5.0.1
   minimist: ^1.2.8
 
-devDependencies:
-  '@commitlint/cli':
-    specifier: ^17.6.5
-    version: 17.6.5
-  '@commitlint/config-conventional':
-    specifier: ^17.6.5
-    version: 17.6.5
-  '@types/node':
-    specifier: ^18.16.18
-    version: 18.16.18
-  husky:
-    specifier: ^8.0.3
-    version: 8.0.3
-  rome:
-    specifier: 12.1.3
-    version: 12.1.3
-  tsc-watch:
-    specifier: ^6.0.4
-    version: 6.0.4(typescript@4.9.5)
-  turbo:
-    specifier: latest
-    version: 1.10.3
+importers:
+
+  .:
+    devDependencies:
+      '@commitlint/cli':
+        specifier: ^17.6.6
+        version: 17.6.6
+      '@commitlint/config-conventional':
+        specifier: ^17.6.6
+        version: 17.6.6
+      '@types/node':
+        specifier: ^18.16.18
+        version: 18.16.18
+      husky:
+        specifier: ^8.0.3
+        version: 8.0.3
+      rome:
+        specifier: 12.1.3
+        version: 12.1.3
+      tsc-watch:
+        specifier: ^6.0.4
+        version: 6.0.4(typescript@4.9.5)
+      turbo:
+        specifier: latest
+        version: 1.10.6
 
 packages:
 
@@ -53,13 +56,13 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@commitlint/cli@17.6.5:
-    resolution: {integrity: sha512-3PQrWr/uo6lzF5k7n5QuosCYnzaxP9qGBp3jhWP0Vmsa7XA6wrl9ccPqfQyXpSbQE3zBROVO3TDqgPKe4tfmLQ==}
+  /@commitlint/cli@17.6.6:
+    resolution: {integrity: sha512-sTKpr2i/Fjs9OmhU+beBxjPavpnLSqZaO6CzwKVq2Tc4UYVTMFgpKOslDhUBVlfAUBfjVO8ParxC/MXkIOevEA==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.4.4
-      '@commitlint/lint': 17.6.5
+      '@commitlint/lint': 17.6.6
       '@commitlint/load': 17.5.0
       '@commitlint/read': 17.5.1
       '@commitlint/types': 17.4.4
@@ -73,8 +76,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional@17.6.5:
-    resolution: {integrity: sha512-Xl9H9KLl86NZm5CYNTNF9dcz1xelE/EbvhWIWcYxG/rn3UWYWdWmmnX2q6ZduNdLFSGbOxzUpIx61j5zxbeXxg==}
+  /@commitlint/config-conventional@17.6.6:
+    resolution: {integrity: sha512-phqPz3BDhfj49FUYuuZIuDiw+7T6gNAEy7Yew1IBHqSohVUCWOK2FXMSAExzS2/9X+ET93g0Uz83KjiHDOOFag==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 5.0.0
@@ -113,19 +116,19 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/is-ignored@17.6.5:
-    resolution: {integrity: sha512-CQvAPt9gX7cuUbMrIaIMKczfWJqqr6m8IlJs0F2zYwyyMTQ87QMHIj5jJ5HhOaOkaj6dvTMVGx8Dd1I4xgUuoQ==}
+  /@commitlint/is-ignored@17.6.6:
+    resolution: {integrity: sha512-4Fw875faAKO+2nILC04yW/2Vy/wlV3BOYCSQ4CEFzriPEprc1Td2LILmqmft6PDEK5Sr14dT9tEzeaZj0V56Gg==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.4.4
-      semver: 7.5.0
+      semver: 7.5.2
     dev: true
 
-  /@commitlint/lint@17.6.5:
-    resolution: {integrity: sha512-BSJMwkE4LWXrOsiP9KoHG+/heSDfvOL/Nd16+ojTS/DX8HZr8dNl8l3TfVr/d/9maWD8fSegRGtBtsyGuugFrw==}
+  /@commitlint/lint@17.6.6:
+    resolution: {integrity: sha512-5bN+dnHcRLkTvwCHYMS7Xpbr+9uNi0Kq5NR3v4+oPNx6pYXt8ACuw9luhM/yMgHYwW0ajIR20wkPAFkZLEMGmg==}
     engines: {node: '>=v14'}
     dependencies:
-      '@commitlint/is-ignored': 17.6.5
+      '@commitlint/is-ignored': 17.6.6
       '@commitlint/parse': 17.6.5
       '@commitlint/rules': 17.6.5
       '@commitlint/types': 17.4.4
@@ -969,7 +972,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.11.0
-      semver: 7.5.0
+      semver: 7.5.2
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -1180,8 +1183,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.5.0:
-    resolution: {integrity: sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==}
+  /semver@7.5.2:
+    resolution: {integrity: sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -1367,65 +1370,65 @@ packages:
       typescript: 4.9.5
     dev: true
 
-  /turbo-darwin-64@1.10.3:
-    resolution: {integrity: sha512-IIB9IomJGyD3EdpSscm7Ip1xVWtYb7D0x7oH3vad3gjFcjHJzDz9xZ/iw/qItFEW+wGFcLSRPd+1BNnuLM8AsA==}
+  /turbo-darwin-64@1.10.6:
+    resolution: {integrity: sha512-s2Gc7i9Ud+H9GDcrGJjPIyscJfzDGQ6il4Sl2snfvwngJs4/TaqKuBoX3HNt/7F4NiFRs7ZhlLV1/Yu9zGBRhw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@1.10.3:
-    resolution: {integrity: sha512-SBNmOZU9YEB0eyNIxeeQ+Wi0Ufd+nprEVp41rgUSRXEIpXjsDjyBnKnF+sQQj3+FLb4yyi/yZQckB+55qXWEsw==}
+  /turbo-darwin-arm64@1.10.6:
+    resolution: {integrity: sha512-tgl70t5PBLyRcNTdP9N6NjvdvQ5LUk8Z60JGUhBhnc+oCOdA4pltrDJNPyel3tQAXXt1dDpl8pp9vUrbwoVyGg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@1.10.3:
-    resolution: {integrity: sha512-kvAisGKE7xHJdyMxZLvg53zvHxjqPK1UVj4757PQqtx9dnjYHSc8epmivE6niPgDHon5YqImzArCjVZJYpIGHQ==}
+  /turbo-linux-64@1.10.6:
+    resolution: {integrity: sha512-h7eyAA3xtAVpamcYJYUwe0xm0LWdbv7/I7QiM09AZ67TTNpyUgqW8giFN3h793BHEQ2Rcnk9FNkpIbjWBbyamg==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@1.10.3:
-    resolution: {integrity: sha512-Qgaqln0IYRgyL0SowJOi+PNxejv1I2xhzXOI+D+z4YHbgSx87ox1IsALYBlK8VRVYY8VCXl+PN12r1ioV09j7A==}
+  /turbo-linux-arm64@1.10.6:
+    resolution: {integrity: sha512-8cZhOeLqu3QZ27yLd6bw4FNaB8y5pLdWeRLJeiWHkIb/cptKnRKJFP+keBJzJi8ovaMqdBpabrxiBRN2lhau5Q==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@1.10.3:
-    resolution: {integrity: sha512-rbH9wManURNN8mBnN/ZdkpUuTvyVVEMiUwFUX4GVE5qmV15iHtZfDLUSGGCP2UFBazHcpNHG1OJzgc55GFFrUw==}
+  /turbo-windows-64@1.10.6:
+    resolution: {integrity: sha512-qx5jcfCJodN1Mh0KtSVQau7pK8CxDvtif7+joPHI2HbQPAADgdUl0LHfA5tFHh6aWgfvhxbvIXqJd6v7Mqkj9g==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@1.10.3:
-    resolution: {integrity: sha512-ThlkqxhcGZX39CaTjsHqJnqVe+WImjX13pmjnpChz6q5HHbeRxaJSFzgrHIOt0sUUVx90W/WrNRyoIt/aafniw==}
+  /turbo-windows-arm64@1.10.6:
+    resolution: {integrity: sha512-vTQaRG3/s2XTreOBr6J9HKFtjzusvwGQg0GtuW2+9Z7fizdzP8MuhaDbN6FhKHcWC81PQPD61TBIKTVTsYOEZg==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@1.10.3:
-    resolution: {integrity: sha512-U4gKCWcKgLcCjQd4Pl8KJdfEKumpyWbzRu75A6FCj6Ctea1PIm58W6Ltw1QXKqHrl2pF9e1raAskf/h6dlrPCA==}
+  /turbo@1.10.6:
+    resolution: {integrity: sha512-0/wbjw4HvmPP1abVWHTdeFRfCA9cn5oxCPP5bDixagLzvDgGWE3xfdlsyGmq779Ekr9vjtDPgC2Y4JlXEhyryw==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.10.3
-      turbo-darwin-arm64: 1.10.3
-      turbo-linux-64: 1.10.3
-      turbo-linux-arm64: 1.10.3
-      turbo-windows-64: 1.10.3
-      turbo-windows-arm64: 1.10.3
+      turbo-darwin-64: 1.10.6
+      turbo-darwin-arm64: 1.10.6
+      turbo-linux-64: 1.10.6
+      turbo-linux-arm64: 1.10.6
+      turbo-windows-64: 1.10.6
+      turbo-windows-arm64: 1.10.6
     dev: true
 
   /type-fest@0.18.1:
